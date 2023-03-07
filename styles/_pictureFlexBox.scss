@@ -1,0 +1,10 @@
+#pictureFlexBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 14rem;
+
+    img {
+        width: 50%;
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,31 @@
+#aboutMeFlexBox {
+    width: 100%;
+
+    .flexBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #aboutMeBox {
+        margin: 5rem 14rem;
+        max-width: 400px;
+        //#textAbtMe{
+            //text-align: justify;
+        //}
+        h2 {
+            display: block;
+        }
+        img {
+            display: block;
+            border-radius: 50%;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
+    #experienceBox {
+        margin: 5rem 14rem;
+        max-width: 400px;
+    }
+}

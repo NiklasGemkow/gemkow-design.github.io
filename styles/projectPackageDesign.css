@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: #d9d9d9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #141414;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.mobileNav {
+  margin-top: 79px;
+  background-color: #141414;
+  transform: translateX(100%);
+  position: absolute;
+  width: 100%;
+  font-weight: 450;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.mobileNav ul li {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.mobileActive {
+  transform: translateX(0%);
+}
+
+nav {
+  margin: 1.75rem 14rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav #navLeft {
+  display: flex;
+  align-items: center;
+}
+nav #navLeft #logoSVG {
+  display: flex;
+  align-items: center;
+}
+nav #navLeft #logoSVG svg {
+  width: 2rem;
+  margin-right: 1.5rem;
+  display: block;
+}
+nav #navLeft h2 {
+  white-space: nowrap;
+  overflow: visible;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+nav #navRight {
+  display: flex;
+  align-items: center;
+}
+nav #navRight ul {
+  color: black;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 80px;
+  height: 100%;
+}
+nav #navRight ul li {
+  white-space: nowrap;
+  color: black;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.25rem;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+nav #navRight ul li a {
+  font-size: 1.25rem;
+}
+nav #navRight #hamburger {
+  display: none;
+  cursor: pointer;
+}
+nav #navRight #hamburger .hamburgerBar {
+  display: block;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #d9d9d9;
+}
+nav #navRight .activeHamburger .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+nav #navRight .activeHamburger .hamburgerBar:nth-child(1) {
+  transform: translateY(8px) rotate(405deg);
+}
+nav #navRight .activeHamburger .hamburgerBar:nth-child(3) {
+  transform: translateY(-8px) rotate(-405deg);
+}
+
+#projectTitleContainer {
+  margin: 5rem 14rem;
+}
+#projectTitleContainer h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 110%;
+}
+#projectTitleContainer #infoTitle {
+  margin-bottom: 3rem;
+}
+#projectTitleContainer .infoText {
+  margin: 1rem 0;
+}
+#projectTitleContainer .infoTextP {
+  margin-bottom: 3rem;
+}
+
+#projectGridWrapper {
+  margin: 5rem 14rem;
+  overflow: hidden;
+}
+#projectGridWrapper #projectGrid {
+  display: grid;
+  grid-template-areas: "a a b c" "a a d e" "f f g h";
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+#projectGridWrapper #projectGrid .projectGridItem {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+}
+#projectGridWrapper #projectGrid .projectGridItem img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #3b3b3b;
+}
+#projectGridWrapper #projectGrid #img1 {
+  grid-area: a;
+}
+#projectGridWrapper #projectGrid #img2 {
+  grid-area: b;
+}
+#projectGridWrapper #projectGrid #img3 {
+  grid-area: c;
+}
+#projectGridWrapper #projectGrid #img4 {
+  grid-area: d;
+}
+#projectGridWrapper #projectGrid #img5 {
+  grid-area: e;
+}
+#projectGridWrapper #projectGrid #img6 {
+  grid-area: f;
+  padding-bottom: 50%;
+}
+#projectGridWrapper #projectGrid #img6 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#projectGridWrapper #projectGrid #img7 {
+  grid-area: g;
+  padding-bottom: 100%;
+}
+#projectGridWrapper #projectGrid #txt1 {
+  grid-area: h;
+  height: auto;
+  padding-bottom: 0%;
+}
+
+@media (max-width: 1680px) {
+  #projectTitleContainer {
+    margin: 5rem 7rem;
+  }
+  #projectGridWrapper {
+    margin: 5rem 7rem;
+  }
+}
+@media (max-width: 1460px) {
+  #projectGridWrapper #projectGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a a b c" "a a d e" "f f g x" "h h y y";
+  }
+}
+@media (max-width: 1340px) {
+  #projectTitleContainer {
+    margin: 5rem 3rem;
+  }
+  #projectGridWrapper {
+    margin: 5rem 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  #projectGridWrapper #projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a a b" "a a c" "d e g" "f f h";
+  }
+}
+@media (max-width: 1040px) {
+  #projectGridWrapper #projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a a b" "a a c" "h h d" "f f e";
+  }
+}
+@media (max-width: 950px) {
+  #projectGridWrapper #projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a a" "a a" "h h" "b c" "d e" "f f" "g x";
+  }
+}
+@media (max-width: 720px) {
+  #projectGridWrapper #projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a a" "a a" "h h" "b c" "d e" "f f" "g x";
+  }
+}
+@media (max-width: 560px) {
+  #projectTitleContainer {
+    margin: 5rem 1.5rem;
+  }
+  #projectGridWrapper {
+    margin: 5rem 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  #projectGridWrapper #projectGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "a" "h" "b" "c" "d" "e" "f" "g";
+  }
+}
+@media (max-width: 420px) {
+  #projectTitleContainer {
+    margin: 3rem 1.5rem;
+  }
+  #projectTitleContainer h2 {
+    font-size: 1.5rem;
+  }
+  #projectTitleContainer h4 {
+    font-size: 1rem;
+  }
+  #projectGridWrapper {
+    margin: 3rem 1.5rem;
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+footer ul {
+  display: flex;
+  gap: 15rem;
+}
+footer ul a {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: uppercase;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  word-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: uppercase;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  word-spacing: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 27px;
+  letter-spacing: 0.05rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.08rem;
+}
+
+a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.pageDividerLine {
+  width: 100%;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+@media (max-width: 1680px) {
+  nav {
+    margin: 1.75rem 7rem;
+  }
+  #sectionIntroduction {
+    margin: 1.75rem 7rem;
+  }
+  .accordion h2 {
+    margin: 0 7rem;
+  }
+  .accordion::after {
+    margin: 0 7rem 0 auto;
+  }
+  .panel {
+    margin: 0 7rem;
+  }
+  #pictureFlexBox {
+    margin: 2.5rem 7rem;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 5rem 7rem;
+  }
+  #aboutMeFlexBox #experienceBox {
+    margin: 5rem 7rem;
+  }
+}
+@media (max-width: 1440px) {
+  nav #navRight ul {
+    gap: 60px;
+  }
+  #sectionIntroduction img {
+    max-width: 400px;
+    top: 100px;
+  }
+  #sectionIntroduction .textBlock {
+    margin: 7rem 0;
+  }
+}
+@media (max-width: 1340px) {
+  nav {
+    margin: 1.75rem 3rem;
+  }
+  #sectionIntroduction {
+    margin: 1.75rem 3rem;
+  }
+  .accordion h2 {
+    margin: 0 3rem;
+  }
+  .accordion::after {
+    margin: 0 3rem 0 auto;
+  }
+  .panel {
+    margin: 0 3rem;
+  }
+  #pictureFlexBox {
+    margin: 2.5rem 3rem;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 3rem 3rem;
+  }
+  #aboutMeFlexBox #experienceBox {
+    margin: 3rem 3rem;
+  }
+}
+@media (max-width: 1150px) {
+  nav #navRight ul {
+    display: none;
+  }
+  nav #navRight #hamburger {
+    display: block;
+  }
+  footer ul {
+    gap: 10rem;
+  }
+}
+@media (max-width: 1060px) {
+  #sectionIntroduction {
+    display: block;
+  }
+  #sectionIntroduction .textBlock {
+    margin: 3rem 0;
+    z-index: 1;
+  }
+  #sectionIntroduction img {
+    z-index: 0;
+    max-width: 350px;
+    top: 0px;
+    right: 0;
+    position: absolute;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 1050px) {
+  #expGrid p {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 960px) {
+  #aboutMeFlexBox .flexBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #sectionIntroduction img {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 860px) {
+  #sectionIntroduction img {
+    opacity: 0.1;
+  }
+}
+@media (max-width: 750px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 500px;
+  }
+  #aboutMeFlexBox #aboutMeBox img {
+    width: 250px;
+  }
+  footer ul {
+    gap: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 700px;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 2.5rem 3rem;
+  }
+}
+@media (max-width: 560px) {
+  nav {
+    margin: 1.75rem 1.5rem;
+  }
+  .mobileNav ul li {
+    padding-left: 1.5rem;
+  }
+  #sectionIntroduction {
+    margin: 1.75rem 1.5rem;
+  }
+  .accordion h2 {
+    margin: 0 1.5rem;
+  }
+  .accordion::after {
+    margin: 0 1.5rem 0 auto;
+  }
+  .panel {
+    margin: 0 1.5rem;
+  }
+  #pictureFlexBox {
+    margin: 2.5rem 1.5rem;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 3rem 1.5rem;
+  }
+  #aboutMeFlexBox #experienceBox {
+    margin: 3rem 1.5rem;
+  }
+  footer ul {
+    gap: 2.5rem;
+  }
+  footer ul a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 600px;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  #sectionIntroduction .textBlock h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  #sectionIntroduction .textBlock h4 {
+    font-size: 1.25rem;
+  }
+  .accordion h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  #sectionIntroduction img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #experienceBox #expGrid p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 355px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 550px;
+  }
+  #experienceBox #expGrid img {
+    max-width: 50px;
+  }
+  #experienceBox #expGrid p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  p {
+    font-size: 1rem;
+  }
+  #swiperSection .swiper .swiper-slide {
+    height: 500px;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+  #experienceBox #expGrid p {
+    padding-left: 3px;
+  }
+}/*# sourceMappingURL=projectPackageDesign.css.map */

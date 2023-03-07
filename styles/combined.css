@@ -1,0 +1,591 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: #d9d9d9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #141414;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+.mobileNav {
+  margin-top: 79px;
+  background-color: #141414;
+  transform: translateX(100%);
+  position: absolute;
+  width: 100%;
+  font-weight: 450;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.mobileNav ul li {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.mobileActive {
+  transform: translateX(0%);
+}
+
+nav {
+  margin: 1.75rem 14rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav #navLeft {
+  display: flex;
+  align-items: center;
+}
+nav #navLeft #logoSVG {
+  display: flex;
+  align-items: center;
+}
+nav #navLeft #logoSVG svg {
+  width: 2rem;
+  margin-right: 1.5rem;
+  display: block;
+}
+nav #navLeft h2 {
+  white-space: nowrap;
+  overflow: visible;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+nav #navRight {
+  display: flex;
+  align-items: center;
+}
+nav #navRight ul {
+  color: black;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 80px;
+  height: 100%;
+}
+nav #navRight ul li {
+  white-space: nowrap;
+  color: black;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1.25rem;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+nav #navRight ul li a {
+  font-size: 1.25rem;
+}
+nav #navRight #hamburger {
+  display: none;
+  cursor: pointer;
+}
+nav #navRight #hamburger .hamburgerBar {
+  display: block;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #d9d9d9;
+}
+nav #navRight .activeHamburger .hamburgerBar:nth-child(2) {
+  opacity: 0;
+}
+nav #navRight .activeHamburger .hamburgerBar:nth-child(1) {
+  transform: translateY(8px) rotate(405deg);
+}
+nav #navRight .activeHamburger .hamburgerBar:nth-child(3) {
+  transform: translateY(-8px) rotate(-405deg);
+}
+
+h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: uppercase;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  word-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: uppercase;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  word-spacing: 0.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 27px;
+  letter-spacing: 0.05rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.08rem;
+}
+
+a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.pageDividerLine {
+  width: 100%;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+#swiperSection {
+  margin: 2.5rem 0;
+}
+#swiperSection .swiper {
+  padding-bottom: 30px;
+}
+#swiperSection .swiper .swiper-slide {
+  position: relative;
+  height: 600px;
+  border: 1px solid #d9d9d9;
+}
+#swiperSection .swiper .swiper-slide a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#swiperSection .swiper h3 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+#swiperSection .swiper p {
+  margin: 20px;
+}
+#swiperSection .swiper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#swiperSection .swiper .swiper-scrollbar {
+  background-color: rgb(80, 80, 80);
+}
+#swiperSection .swiper-scrollbar-drag {
+  bottom: 0;
+  height: 4px;
+  border-radius: 0;
+  background: #d9d9d9;
+}
+#swiperSection .swiper-navBtn {
+  display: none;
+}
+
+#sectionIntroduction {
+  position: relative;
+  display: flex;
+  margin: 1.75rem 14rem;
+}
+#sectionIntroduction .textBlock {
+  position: relative;
+  margin: 10rem 0;
+}
+#sectionIntroduction .textBlock h1 {
+  margin: 1.5rem 0;
+}
+#sectionIntroduction .textBlock a {
+  display: inline-block;
+  padding: 10px 40px;
+  border: 1px solid #D9D9D9;
+  margin-top: 2rem;
+}
+#sectionIntroduction img {
+  top: 50px;
+  max-width: 500px;
+  position: absolute;
+  right: 0px;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  color: #444;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion h2 {
+  margin: 0 14rem;
+  font-size: 2rem;
+}
+
+.panel {
+  margin: 0 14rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.accordion:after {
+  content: "➕"; /* "plus" sign (+) */
+  font-size: 13px;
+  color: #D9D9D9;
+  margin: 0 14rem 0 auto;
+}
+
+.active:after {
+  content: "➖"; /* "minus" sign (-) */
+}
+
+#pictureFlexBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 14rem;
+}
+#pictureFlexBox img {
+  width: 50%;
+  max-width: 500px;
+}
+
+#aboutMeFlexBox {
+  width: 100%;
+}
+#aboutMeFlexBox .flexBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#aboutMeFlexBox #aboutMeBox {
+  margin: 5rem 14rem;
+  max-width: 400px;
+}
+#aboutMeFlexBox #aboutMeBox h2 {
+  display: block;
+}
+#aboutMeFlexBox #aboutMeBox img {
+  display: block;
+  border-radius: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+#aboutMeFlexBox #experienceBox {
+  margin: 5rem 14rem;
+  max-width: 400px;
+}
+
+#experienceBox {
+  left: 0;
+  right: 0;
+}
+#experienceBox h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+#experienceBox #expGrid {
+  max-width: 400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  row-gap: 3rem;
+}
+#experienceBox #expGrid #rhinoImg {
+  max-width: 50px;
+}
+#experienceBox #expGrid img {
+  margin: 0 auto 0 0;
+  padding-right: 15px;
+  max-width: 69px;
+}
+#experienceBox #expGrid p {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  white-space: nowrap;
+}
+#experienceBox #expGrid .rightGridP {
+  margin-right: 0;
+}
+
+#abstractIMG {
+  max-height: 162px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+footer ul {
+  display: flex;
+  gap: 15rem;
+}
+footer ul a {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1680px) {
+  nav {
+    margin: 1.75rem 7rem;
+  }
+  #sectionIntroduction {
+    margin: 1.75rem 7rem;
+  }
+  .accordion h2 {
+    margin: 0 7rem;
+  }
+  .accordion::after {
+    margin: 0 7rem 0 auto;
+  }
+  .panel {
+    margin: 0 7rem;
+  }
+  #pictureFlexBox {
+    margin: 2.5rem 7rem;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 5rem 7rem;
+  }
+  #aboutMeFlexBox #experienceBox {
+    margin: 5rem 7rem;
+  }
+}
+@media (max-width: 1440px) {
+  nav #navRight ul {
+    gap: 60px;
+  }
+  #sectionIntroduction img {
+    max-width: 400px;
+    top: 100px;
+  }
+  #sectionIntroduction .textBlock {
+    margin: 7rem 0;
+  }
+}
+@media (max-width: 1340px) {
+  nav {
+    margin: 1.75rem 3rem;
+  }
+  #sectionIntroduction {
+    margin: 1.75rem 3rem;
+  }
+  .accordion h2 {
+    margin: 0 3rem;
+  }
+  .accordion::after {
+    margin: 0 3rem 0 auto;
+  }
+  .panel {
+    margin: 0 3rem;
+  }
+  #pictureFlexBox {
+    margin: 2.5rem 3rem;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 3rem 3rem;
+  }
+  #aboutMeFlexBox #experienceBox {
+    margin: 3rem 3rem;
+  }
+}
+@media (max-width: 1150px) {
+  nav #navRight ul {
+    display: none;
+  }
+  nav #navRight #hamburger {
+    display: block;
+  }
+  footer ul {
+    gap: 10rem;
+  }
+}
+@media (max-width: 1060px) {
+  #sectionIntroduction {
+    display: block;
+  }
+  #sectionIntroduction .textBlock {
+    margin: 3rem 0;
+    z-index: 1;
+  }
+  #sectionIntroduction img {
+    z-index: 0;
+    max-width: 350px;
+    top: 0px;
+    right: 0;
+    position: absolute;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 1050px) {
+  #expGrid p {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 960px) {
+  #aboutMeFlexBox .flexBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #sectionIntroduction img {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 860px) {
+  #sectionIntroduction img {
+    opacity: 0.1;
+  }
+}
+@media (max-width: 750px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 500px;
+  }
+  #aboutMeFlexBox #aboutMeBox img {
+    width: 250px;
+  }
+  footer ul {
+    gap: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 700px;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 2.5rem 3rem;
+  }
+}
+@media (max-width: 560px) {
+  nav {
+    margin: 1.75rem 1.5rem;
+  }
+  .mobileNav ul li {
+    padding-left: 1.5rem;
+  }
+  #sectionIntroduction {
+    margin: 1.75rem 1.5rem;
+  }
+  .accordion h2 {
+    margin: 0 1.5rem;
+  }
+  .accordion::after {
+    margin: 0 1.5rem 0 auto;
+  }
+  .panel {
+    margin: 0 1.5rem;
+  }
+  #pictureFlexBox {
+    margin: 2.5rem 1.5rem;
+  }
+  #aboutMeFlexBox #aboutMeBox {
+    margin: 3rem 1.5rem;
+  }
+  #aboutMeFlexBox #experienceBox {
+    margin: 3rem 1.5rem;
+  }
+  footer ul {
+    gap: 2.5rem;
+  }
+  footer ul a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 600px;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  #sectionIntroduction .textBlock h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+  #sectionIntroduction .textBlock h4 {
+    font-size: 1.25rem;
+  }
+  .accordion h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  #sectionIntroduction img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #experienceBox #expGrid p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 355px) {
+  #swiperSection .swiper .swiper-slide {
+    height: 550px;
+  }
+  #experienceBox #expGrid img {
+    max-width: 50px;
+  }
+  #experienceBox #expGrid p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 340px) {
+  p {
+    font-size: 1rem;
+  }
+  #swiperSection .swiper .swiper-slide {
+    height: 500px;
+  }
+  footer ul {
+    gap: 1rem;
+  }
+  #experienceBox #expGrid p {
+    padding-left: 3px;
+  }
+}/*# sourceMappingURL=combined.css.map */

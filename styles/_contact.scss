@@ -1,0 +1,85 @@
+#projectTitleContainer {
+    #emailH2 a{
+        text-decoration: underline;
+    }
+    margin: 5rem 14rem;
+    h2 {
+        margin: 1rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 110%;
+        
+    }
+    
+    #infoTitle {
+        margin-bottom: 3rem;
+    }
+    .infoText {
+        margin: 1rem 0;
+    }
+    .infoTextP {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (max-width: 1680px) {
+    #projectTitleContainer {
+        margin: 5rem 7rem;
+    }
+    #projectGridWrapper {
+        margin: 5rem 7rem;
+    }
+}
+
+@media (max-width: 1340px) {
+    #projectTitleContainer {
+        margin: 5rem 3rem;
+    }
+    #projectGridWrapper {
+        margin: 5rem 3rem;
+    }
+}
+
+@media (max-width: 560px) {
+    #projectTitleContainer {
+        margin: 5rem 1.5rem;
+    }
+    #projectGridWrapper {
+        margin: 5rem 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    #projectTitleContainer #emailH2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #projectTitleContainer {
+        margin: 3rem 1.5rem;
+        h2 {
+            font-size: 1.5rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+    }
+    #projectGridWrapper {
+        margin: 3rem 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #projectTitleContainer #emailH2{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 340px) {
+    #projectTitleContainer #emailH2{
+        font-size: 1.1rem;
+    }
+}
+

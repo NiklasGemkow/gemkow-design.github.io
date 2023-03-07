@@ -1,0 +1,270 @@
+@media (max-width: 1680px) {
+    nav {
+        margin: 1.75rem 7rem;
+    }
+    #sectionIntroduction {
+        margin: 1.75rem 7rem;
+    }
+    .accordion h2 {
+        margin: 0 7rem;
+    }
+    .accordion::after {
+        margin: 0 7rem 0 auto;
+    }
+    .panel {
+        margin: 0 7rem;
+    }
+    #pictureFlexBox {
+        margin: 2.5rem 7rem;
+    }
+    #aboutMeFlexBox {
+        #aboutMeBox {
+            margin: 5rem 7rem;
+        }
+        #experienceBox {
+            margin: 5rem 7rem;
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+}
+
+@media (max-width: 1440px) {
+    nav {
+        #navRight {
+            ul {
+                gap: 60px;
+            }
+        }
+    }
+    #sectionIntroduction {
+        img {
+            max-width: 400px;
+            top: 100px;
+        }
+        .textBlock {
+            margin: 7rem 0;
+        }
+    }
+}
+
+@media (max-width: 1340px) {
+    nav {
+        margin: 1.75rem 3rem;
+    }
+    #sectionIntroduction {
+        margin: 1.75rem 3rem;
+    }
+    .accordion h2 {
+        margin: 0 3rem;
+    }
+    .accordion::after {
+        margin: 0 3rem 0 auto;
+    }
+    .panel {
+        margin: 0 3rem;
+    }
+    #pictureFlexBox {
+        margin: 2.5rem 3rem;
+    }
+    #aboutMeFlexBox {
+        #aboutMeBox {
+            margin: 3rem 3rem;
+        }
+        #experienceBox {
+            margin: 3rem 3rem;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    nav #navRight {
+        ul {
+            display: none;
+        }
+        #hamburger {
+            display: block;
+        }
+    }
+    footer ul {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    #sectionIntroduction {
+        display: block;
+        .textBlock {
+            margin: 3rem 0;
+            z-index: 1;
+        }
+        img {
+            z-index: 0;
+            max-width: 350px;
+            top: 0px;
+            right: 0;
+            position: absolute;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    #expGrid {
+        p {
+            padding-left: 1rem;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    #aboutMeFlexBox .flexBox {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    #sectionIntroduction img {
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 860px) {
+    #sectionIntroduction img {
+        opacity: 0.1;
+    }
+}
+
+@media (max-width: 750px) {
+    #swiperSection .swiper .swiper-slide {
+        height: 500px;
+    }
+    #aboutMeFlexBox #aboutMeBox img {
+        width: 250px;
+    }
+    footer ul {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #swiperSection .swiper .swiper-slide {
+        height: 700px;
+    }
+    #aboutMeFlexBox #aboutMeBox {
+        margin: 2.5rem 3rem;
+    }
+}
+
+@media (max-width: 560px) {
+    nav {
+        margin: 1.75rem 1.5rem;
+    }
+    .mobileNav ul li {
+        padding-left: 1.5rem;
+    }
+    #sectionIntroduction {
+        margin: 1.75rem 1.5rem;
+    }
+    .accordion h2 {
+        margin: 0 1.5rem;
+    }
+    .accordion::after {
+        margin: 0 1.5rem 0 auto;
+    }
+    .panel {
+        margin: 0 1.5rem;
+    }
+    #pictureFlexBox {
+        margin: 2.5rem 1.5rem;
+    }
+    #aboutMeFlexBox {
+        #aboutMeBox {
+            margin: 3rem 1.5rem;
+        }
+        #experienceBox {
+            margin: 3rem 1.5rem;
+        }
+    }
+    footer ul {
+        a {
+            font-size: 1rem;
+        }
+
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    #swiperSection .swiper .swiper-slide {
+        height: 600px;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    #sectionIntroduction .textBlock {
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+        h4 {
+            font-size: 1.25rem;
+        }
+    }
+
+    .accordion h2 {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    #sectionIntroduction img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #experienceBox {
+        #expGrid {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 355px) {
+    #swiperSection .swiper .swiper-slide {
+        height: 550px;
+    }
+    #experienceBox {
+        #expGrid {
+            img {
+                max-width: 50px;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    p {
+        font-size: 1rem;
+    }
+    #swiperSection .swiper .swiper-slide {
+        height: 500px;
+    }
+    footer ul {
+        gap: 1rem;
+    }
+    #experienceBox {
+        #expGrid {
+            
+            p {
+                padding-left: 3px;
+            }
+        }
+    }
+    
+}

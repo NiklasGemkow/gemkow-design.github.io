@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    color: #d9d9d9;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #141414;
+    overflow-x: hidden;
+  }
+  
+  li {
+    list-style: none;
+  }
