@@ -66,11 +66,14 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  position: relative;
   background-color: #141414;
   overflow-x: hidden;
+  width: 100%;
 }
 
 li {
