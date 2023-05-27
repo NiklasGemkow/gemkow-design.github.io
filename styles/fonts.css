@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Mukta";
+    font-weight: 300;
+    src: url("/assets/fonts/mukta-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mukta";
+    font-weight: 200;
+    src: url("/assets/fonts/mukta-extralight-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mukta";
+    font-weight: 400;
+    src: url("/assets/fonts/mukta-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mukta";
+    font-weight: 500;
+    src: url("/assets/fonts/mukta-medium-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mukta";
+    font-weight: 600;
+    src: url("/assets/fonts/mukta-semibold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mukta";
+    font-weight: 700;
+    src: url("/assets/fonts/mukta-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Mukta";
+    font-weight: 800;
+    src: url("/assets/fonts/mukta-extrabold-webfont.woff2") format("woff2");
+}
